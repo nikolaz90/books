@@ -8,7 +8,7 @@ class Book
   end
 
   def return_book_in(format_required)
-    case format_required
+    case format_required.downcase
     when "csv"
       return csv_response
     when 'json'
