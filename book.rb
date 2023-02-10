@@ -7,7 +7,7 @@ class Book
     @author = author
   end
 
-  def return_book_collection(format_required)
+  def return_book_in(format_required)
     case format_required
     when "csv"
       return csv_response
