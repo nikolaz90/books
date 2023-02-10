@@ -13,6 +13,8 @@ class Book
       return csv_response
     when 'json'
       return json_response
+    else
+      "Error:Format not supported"
     end
   end
 
